@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         view.backgroundColor = UIColor.yellow
+        color.text = "노랑"
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,15 +23,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet weak var color: UILabel!
     @IBAction func button(_ sender: UIButton) {
         
         if a == 1{
             view.backgroundColor = UIColor.yellow
+            color.text = "노랑"
             a += 1
         }
         else if a == 2
         {
             view.backgroundColor = UIColor.red
+            color.text = "빨강"
             a = 1
         }
     }
@@ -38,14 +42,16 @@ class ViewController: UIViewController {
         switch a {
         case(1) :
             view.backgroundColor = UIColor.blue
+            color.text = "파랑"
             a += 1
         case(2) :
             view.backgroundColor = UIColor.red
+            color.text = "빨강"
             a += 1
         default:
             view.backgroundColor = UIColor.yellow
+            color.text = "노랑"
             a = 1
-      
         }
     }
     
