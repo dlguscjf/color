@@ -27,14 +27,14 @@ class ViewController: UIViewController {
     @IBAction func button(_ sender: UIButton) {
         
         if a == 1{
-            view.backgroundColor = UIColor.yellow
-            color.text = "노랑"
+            view.backgroundColor = UIColor.red
+            color.text = "빨강"
             a += 1
         }
         else if a == 2
         {
-            view.backgroundColor = UIColor.red
-            color.text = "빨강"
+            view.backgroundColor = UIColor.yellow
+            color.text = "노랑"
             a = 1
         }
     }
