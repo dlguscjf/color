@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     var a = 1
+    var a1 = 1
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -31,6 +32,20 @@ class ViewController: UIViewController {
         {
             view.backgroundColor = UIColor.red
             a = 1
+        }
+    }
+    @IBAction func button2(_ sender: UIButton) {
+        switch a {
+        case(1) :
+            view.backgroundColor = UIColor.blue
+            a += 1
+        case(2) :
+            view.backgroundColor = UIColor.red
+            a += 1
+        default:
+            view.backgroundColor = UIColor.yellow
+            a = 1
+      
         }
     }
     
